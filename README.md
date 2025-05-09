@@ -25,25 +25,25 @@ A real-time multiplayer Tic-Tac-Toe game frontend built with React and Socket.IO
 ## Installation
 
 1. Clone the repository:
-   \`\`\`
+`
    git clone https://github.com/MehulOlakiya/tic-tac-toe-frontend.git
    cd tic-tac-toe-frontend
-   \`\`\`
+   `
 
 2. Install dependencies:
-   \`\`\`
+`
    npm install
-   \`\`\`
+  `
 
 3. Create a `.env` file in the root directory (use `.env.example` as a template):
-   \`\`\`
+  `
    BACKEND_URL=http://localhost:3001
-   \`\`\`
+   `
 
 4. Start the development server:
-   \`\`\`
+`
    npm run dev
-   \`\`\`
+ `
 
 5. Open your browser and navigate to `http://localhost:3000`
 
