@@ -1,0 +1,131 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.game-info {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.status {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #e9ecef;
+}
+
+.status.winner {
+  background-color: #d4edda;
+  color: #155724;
+  font-weight: bold;
+  animation: pulse 1.5s infinite;
+}
+
+.status.draw {
+  background-color: #e2e3e5;
+  color: #383d41;
+  font-weight: bold;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(21, 87, 36, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(21, 87, 36, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(21, 87, 36, 0);
+  }
+}
+
+.reset-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  background-color: #0069d9;
+}
+
+.reset-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+}
+
+.score-board {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: linear-gradient(145deg, #ffffff, #f5f5f5);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid #e0e0e0;
+}
+
+.score {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  gap: 20px;
+}
+
+.score span {
+  padding: 12px 25px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.score span::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.player-o {
+  color: #1976d2;
+  background-color: rgba(33, 150, 243, 0.1);
+  border: 2px solid rgba(33, 150, 243, 0.2);
+}
+
+.player-o::before {
+  background-color: #1976d2;
+  box-shadow: 0 0 10px rgba(33, 150, 243, 0.5);
+}
+
+.player-x {
+  color: #d32f2f;
+  background-color: rgba(244, 67, 54, 0.1);
+  border: 2px solid rgba(244, 67, 54, 0.2);
+}
+
+.player-x::before {
+  background-color: #d32f2f;
+  box-shadow: 0 0 10px rgba(244, 67, 54, 0.5);
+}
+
+.score span:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

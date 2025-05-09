@@ -1,0 +1,56 @@
+.game-info-container {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game-details {
+  margin-bottom: 10px;
+}
+
+.game-details p {
+  margin: 5px 0;
+}
+
+.game-id {
+  font-weight: bold;
+  color: #007bff;
+  background-color: #e9ecef;
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+
+.player-symbol {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.player-symbol:after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  border-radius: 50%;
+}
+
+.opponent-status {
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.opponent-status.connected {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.opponent-status.disconnected {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+}
