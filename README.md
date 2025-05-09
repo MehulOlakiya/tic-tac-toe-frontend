@@ -26,7 +26,7 @@ A real-time multiplayer Tic-Tac-Toe game frontend built with React and Socket.IO
 
 1. Clone the repository:
    \`\`\`
-   git clone https://github.com/yourusername/tic-tac-toe-frontend.git
+   git clone https://github.com/MehulOlakiya/tic-tac-toe-frontend.git
    cd tic-tac-toe-frontend
    \`\`\`
 
